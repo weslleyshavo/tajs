@@ -1,0 +1,17 @@
+{
+  "name": "01-esmodules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server .",
+    "test": "node --test test/index.test.js"
+  },
+  "keywords": [],
+  "author": "weslleyshavo",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

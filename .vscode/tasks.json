@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "run-project-tests",
+    "type": "shell",
+    "command": "bash",
+    "args": [
+      "-c",
+      // ". ~/.nvm/nvm.sh && nvm use v18; PROJECT_DIR=$(dirname ${file}); cd \"${PROJECT_DIR}\"; npm run test:debug"
+      "PROJECT_DIR=$(dirname ${file}); cd \"${PROJECT_DIR}\"; npm run test:debug"
+    ],
+    "group": {
+      "kind": "build",
+      "isDefault": true
+    },
+    "presentation": {
+      "reveal": "always",
+      "panel": "shared"
+    },
+    "problemMatcher": []
+  }]
+}

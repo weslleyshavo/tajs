@@ -1,0 +1,23 @@
+{
+  "name": "pre-jsexpert-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit test/",
+    "test:dev": "npx mocha test/ -w",
+    "test:cov": "npx nyc --reporter=html npm test"
+  },
+  "keywords": [],
+  "author": "weslleyshavo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  },
+  "dependencies": {
+    "lokijs": "^1.5.12"
+  }
+}

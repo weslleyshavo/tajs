@@ -1,0 +1,26 @@
+{
+  "name": "aula02-web-integration-nock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "DEBUG=nock* NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "DEBUG=nock* NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand --watchAll test/",
+    "test:debug": "DEBUG=nock* node --experimental-vm-modules --inspect-brk node_modules/.bin/jest --injectGlobals false --runInBand --watchAll test/"
+  },
+  "keywords": [],
+  "author": "weslleyshavo",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v18.17.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nock": "^13.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}

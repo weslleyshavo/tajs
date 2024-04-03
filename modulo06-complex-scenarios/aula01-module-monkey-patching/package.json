@@ -1,0 +1,27 @@
+{
+  "name": "aula01-module-monkey-patching",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "npx jest --injectGlobals false --runInBand --watchAll test/",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --injectGlobals false --runInBand --watchAll test/"
+  },
+  "keywords": [],
+  "author": "weslleyshavo",
+  "license": "ISC",
+  "engines": {
+    "node": "v18.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "lokijs": "^1.5.12"
+  }
+}
